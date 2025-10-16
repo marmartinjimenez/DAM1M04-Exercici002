@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-       <meta charset="UTF-8">
-       <title>Principal</title>
-       <link rel="stylesheet" href="global.css">
-   </head>
-   <body>
-  <div class="barra"></div>
-   </body>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maria Fitness Gym - Contacte</title>
+
+  <link rel="stylesheet" href="global.css">
+
+  <style>
+    .contenidor {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .graella {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    form, .informacio {
+      border: 1px solid #ccc;
+      padding: 12px;
+    }
+
+    label {
+      display: block;
+      margin: 6px 0 2px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .mapa-fictici {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <strong>Maria Fitness Gym</strong>
+      <a href="index.html">Inici</a>
+      <a href="productes.html">Productes</a>
+      <a href="contacte.html">Contacte</a>
+    </nav>
+  </header>
+
+  <main class="contenidor"><br>
+    <h1>Contacta'ns</h1>
+
+    <section class="graella">
+      <form>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom">
+
+        <label for="correu">Correu electrònic</label>
+        <input type="email" id="correu" name="correu">
+
+        <label for="missatge">Missatge</label>
+        <textarea id="missatge" name="missatge"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="informacio">
+        <p><strong>Adreça:</strong> Carrer Esport 123, Barcelona</p>
+        <p><strong>Horari:</strong> Dl–Dv 10–14h / 16–20h</p>
+        <p><strong>Telèfon:</strong> 655 123 456</p>
+        <img src="img/maps.jpg" alt="Mapa de la botiga" class="mapa-fictici">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Maria Fitness Gym · mariafitness@gmail.com
+  </footer>
+</body>
 </html>
